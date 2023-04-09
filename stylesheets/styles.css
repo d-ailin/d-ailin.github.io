@@ -21,12 +21,12 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 h2 {
   color:#393939;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 h3, h4, h5, h6 {
@@ -155,7 +155,7 @@ header ul a:active {
 
 strong {
   color:#222;
-  font-weight:500;
+  font-weight:700;
 }
 
 header ul li + li + li {
@@ -170,7 +170,8 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  /* width:500px; */
+  width:550px;
   float:right;
   padding-bottom:50px;
 }
@@ -267,4 +268,93 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+/* custom */
+
+h1, h2, h3 {
+   color: #393939;
+}
+
+.title {
+  color: #393939;
+  text-align: center
+}
+
+a.bold {
+  color: #393939;
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+}
+
+.icon-bar {
+  text-align: center;
+  padding-top: 0.2em;
+  font-size: 1.5em;
+
+}
+
+.icon-bar a {
+  color: #393939;
+  margin: 0.2em;
+}
+
+
+.icon-bar i {
+  height: 1.5em;
+}
+
+.icon-bar a:hover {
+  /* color: #39c; */
+  color: #f09228;
+  /* color: #4caf50; */
+  cursor: pointer;
+}
+
+.icon-bar a:hover:nth-child(2) {
+  color: #2b83d1
+}
+
+.icon-bar a:hover:nth-child(3) {
+  color: #bc4f5a
+}
+
+.pub {
+  margin-bottom: 3.5em;
+}
+
+.pub span {
+  display: block;
+}
+
+.pub span.title {
+  font-weight: bold;
+  text-align: left;
+  /* color: #39c; */
+  /* color: #393939; */
+}
+
+/* .pub span.title a{
+  color: #39c;
+} */
+
+/* .pub span.title a:hover{
+  color: #f09228;
+} */
+
+
+/* .pub span.info {
+  font-style: italic;
+} */
+
+.section-title {
+  margin-top: 2.5em;
+}
+
+a:hover {
+  /* color: #f09228; */
+  text-decoration: underline;
 }
