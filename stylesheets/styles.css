@@ -300,12 +300,18 @@ a.bold {
 .icon-bar a {
   color: #393939;
   margin: 0.2em;
+
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 
 .icon-bar i {
   height: 1.5em;
 }
+
 
 .icon-bar a:hover {
   /* color: #39c; */
@@ -357,4 +363,15 @@ a.bold {
 a:hover {
   /* color: #f09228; */
   text-decoration: underline;
+}
+
+.pub .title a {
+  color: #222;
+}
+
+.pub .author-tag {
+  /* text-decoration: underline; */
+  /* display: inline-block; */
+  display: inline;
+  border-bottom: 1px dotted black;
 }
