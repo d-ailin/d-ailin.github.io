@@ -375,3 +375,14 @@ a:hover {
   display: inline;
   border-bottom: 1px dotted black;
 }
+
+.pub .toggle-content {
+  display: none;
+  padding: 0.2em 1em;
+  text-align: left;
+  border: 1px dashed black;
+  border-radius: 0.2em;
+  padding: 1em 2em;
+}
+
+

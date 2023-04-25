@@ -50,12 +50,24 @@
           <span class="title">Great Models Think Alike: Improving Model Reliability via Inter-Model Latent Agreement</span>
           <span class="authors"><span class="author-tag">Ailin Deng</span>, Miao Xiong, Bryan Hooi </span>
           <span class="info"> ICML 2023</span>
+          <span>
+            <a class="toggle-trigger" href="#">TL;DR</a>
+          </span>
+          <span class="toggle-content">
+            A prediction tend to be more reliable when its neighborhood in latent spaces is similar to those obtained from a foundation model.
+          </span>
         </div>
 
         <div class="pub">
           <span class="title">Probabilistic Knowledge Distillation for Face Ensembles  </span>
           <span class="authors">Jianqing Xu, Shen Li, <span class="author-tag">Ailin Deng</span>, Miao Xiong, Jiaying Wu, Jiaxiang Wu, Shouhong Ding, Bryan Hooi </span>
           <span class="info"> CVPR 2023</span>
+          <span>
+            <a class="toggle-trigger" href="#">TL;DR</a>
+          </span>
+          <span class="toggle-content">
+            A bayesian view of ensembles and its application in open-set (i.e. face recognition) problem.
+          </span>
         </div>
 
 
@@ -63,8 +75,14 @@
           <span class="title">Trust, but Verify: Using Self-Supervised Probing to Improve Trustworthiness  </span>
           <span class="authors"><span class="author-tag">Ailin Deng</span>, Shen Li, Miao Xiong, Zhirui Chen, Bryan Hooi</span>
           <span class="info"> ECCV 2022</span>
-          <span> <a href="https://arxiv.org/abs/2302.02628">paper</a> / <a href="https://github.com/d-ailin/ssprobing">code</a></span>
-
+          <span>
+              <a class="toggle-trigger" href="#">TL;DR</a> /
+              <a href="https://arxiv.org/abs/2302.02628">paper</a> /
+              <a href="https://github.com/d-ailin/ssprobing">code</a>
+          </span>
+          <span class="toggle-content">
+            A prediction tend to be more reliable if it can also predict some related tasks accurately.
+          </span>
         </div>
 
         <div class="pub">
@@ -72,8 +90,12 @@
           <span class="authors">Miao Xiong, Shen Li, Wenjie Feng, <span class="author-tag">Ailin Deng</span>, Jihai Zhang, Bryan Hooi</span>
           <span class="info"> TMLR 2022</span>
           <span>
+            <a class="toggle-trigger" href="#">TL;DR</a> /
             <a href="https://openreview.net/forum?id=p5V8P2J61u">paper</a> / 
             <a href="https://github.com/MiaoXiong2320/NeighborAgg">code</a>
+          </span>
+          <span class="toggle-content">
+            Let's combine the original prediction and the neighborhood samples' predictions to make a decision.
           </span>
 
         </div>
@@ -83,10 +105,13 @@
           <span class="authors"><span class="author-tag">Ailin Deng</span>, Adam Goodge, Lang Yi Ang, Bryan Hooi</span>
           <span class="info"> IJCAI 2022</span>
           <span>
+            <a class="toggle-trigger" href="#">TL;DR</a> /
             <a href="https://www.ijcai.org/proceedings/2022/0278.pdf">paper</a> /
             <a href="https://github.com/d-ailin/CADET">code</a>
           </span>
-
+          <span class="toggle-content">
+            Existing methods tend to assign higher anomaly scores to the 'harder' samples.
+          </span>
         </div>
 
         <div class="pub">
@@ -94,8 +119,12 @@
           <span class="authors"> <span class="author-tag">Ailin Deng</span>, Bryan Hooi</span>
           <span class="info"> AAAI 2021</span>
           <span>
+            <a class="toggle-trigger" href="#">TL;DR</a> /
             <a href="https://arxiv.org/abs/2106.06947">paper</a> / 
             <a href="https://github.com/d-ailin/GDN">code</a>
+          </span>
+          <span class="toggle-content">
+            A model to detect time series anomalies with some abilities of localizing and understanding why an anomaly happen.
           </span>
         </div>
 
@@ -119,6 +148,32 @@
     gtag('js', new Date());
 
     gtag('config', 'G-SC04EMLTM5');
+  </script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+  integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+  crossorigin="anonymous"></script>
+  <script>
+    $('document').ready(function(){
+      $('.toggle-trigger').append(' <i class="fa fa-caret-down" aria-hidden="true"></i>')
+    })
+
+    $('.toggle-trigger').click(function(e) {
+      e.preventDefault();
+      // Get the extra options directly after the clicked link
+      var extraOptions = $(this).closest('div.pub').find('.toggle-content');
+
+      if(extraOptions.is(":visible")) {
+          extraOptions.hide()
+          $(this).find('i').toggleClass('fa-caret-down').toggleClass('fa-caret-up')
+
+      } else {
+          extraOptions.css('display', 'block')
+          $(this).find('i').toggleClass('fa-caret-down').toggleClass('fa-caret-up')
+
+      };
+    })
   </script>
   </body>
 </html>
