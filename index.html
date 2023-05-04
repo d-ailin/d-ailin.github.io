@@ -51,23 +51,38 @@
           <span class="authors"><span class="author-tag">Ailin Deng</span>, Miao Xiong, Bryan Hooi </span>
           <span class="info"> ICML 2023</span>
           <span>
-            <a class="toggle-trigger" href="#">TL;DR</a>
+            <a class="toggle-trigger" href="#">abstract</a>
           </span>
           <span class="toggle-content">
-            We connect a prediction's correctness with its alignment with a foundation model's reasoning.
-            The alignment is measured through neighborhood similarity across any two latent spaces.
+            Reliable application of machine learning is of primary importance to the practical deployment of deep learning methods. A fundamental challenge is that models are often unreliable due to overconfidence. In this paper, we estimate a model's reliability by measuring the agreement between its latent space, and the latent space of a foundation model. However, it is challenging to measure the agreement between two different latent spaces due to their incoherence, \eg, arbitrary rotations and different dimensionality. To overcome this incoherence issue, we design a neighborhood agreement measure between latent spaces and find that this agreement is surprisingly well-correlated with the reliability of a model's predictions. Further, we show that fusing neighborhood agreement into a model's predictive confidence in a post-hoc way significantly improves its reliability. Theoretical analysis and extensive experiments on failure detection across various datasets verify the effectiveness of our method on both in-distribution and out-of-distribution settings.
           </span>
         </div>
 
         <div class="pub">
-          <span class="title">Probabilistic Knowledge Distillation for Face Ensembles  </span>
+          <span class="title">Probabilistic Knowledge Distillation for Face Ensembles</span>
           <span class="authors">Jianqing Xu, Shen Li, <span class="author-tag">Ailin Deng</span>, Miao Xiong, Jiaying Wu, Jiaxiang Wu, Shouhong Ding, Bryan Hooi </span>
           <span class="info"> CVPR 2023</span>
           <span>
-            <a class="toggle-trigger" href="#">TL;DR</a>
+            <a class="toggle-trigger" href="#">abstract</a>
           </span>
           <span class="toggle-content">
-            A bayesian view of ensembles and its application in open-set (i.e. face recognition) problem.
+            Mean ensemble (i.e. averaging predictions from multiple
+            models) is a commonly-used technique in machine learning
+            that improves the performance of each individual model. We
+            formalize it as feature alignment for ensemble in open-set
+            face recognition and generalize it into Bayesian Ensemble
+            Averaging (BEA) through the lens of probabilistic modeling.
+            This generalization brings up two practical benefits that existing methods could not provide: (1) the uncertainty of a
+            face image can be evaluated and further decomposed into
+            aleatoric uncertainty and epistemic uncertainty, the latter
+            of which can be used as a measure for out-of-distribution
+            detection of faceness; (2) a BEA statistic provably reflects
+            the aleatoric uncertainty of a face image, acting as a measure for face image quality to improve recognition performance. To inherit the uncertainty estimation capability from
+            BEA without the loss of inference efficiency, we propose
+            BEA-KD, a student model to distill knowledge from BEA.
+            BEA-KD mimics the overall behavior of ensemble members
+            and consistently outperforms SOTA knowledge distillation
+            methods on various challenging benchmarks.
           </span>
         </div>
 
@@ -77,13 +92,12 @@
           <span class="authors"><span class="author-tag">Ailin Deng</span>, Shen Li, Miao Xiong, Zhirui Chen, Bryan Hooi</span>
           <span class="info"> ECCV 2022</span>
           <span>
-              <a class="toggle-trigger" href="#">TL;DR</a> /
+              <a class="toggle-trigger" href="#">abstract</a> /
               <a href="https://arxiv.org/abs/2302.02628">paper</a> /
               <a href="https://github.com/d-ailin/ssprobing">code</a>
           </span>
           <span class="toggle-content">
-            Examining a prediction with some auxiliary tasks is useful to validate the prediction's correctness.
-          </span>
+            Trustworthy machine learning is of primary importance to the practical deployment of deep learning models. While state-of-the-art models achieve astonishingly good performance in terms of accuracy, recent literature reveals that their predictive confidence scores unfortunately cannot be trusted: e.g., they are often overconfident when wrong predictions are made, or so even for obvious outliers. In this paper, we introduce a new approach of self-supervised probing, which enables us to check and mitigate the overconfidence issue for a trained model, thereby improving its trustworthiness. We provide a simple yet effective framework, which can be flexibly applied to existing trustworthiness-related methods in a plug-and-play manner. Extensive experiments on three trustworthiness-related tasks (misclassification detection, calibration and out-of-distribution detection) across various benchmarks verify the effectiveness of our proposed probing framework.          </span>
         </div>
 
         <div class="pub">
@@ -91,12 +105,12 @@
           <span class="authors">Miao Xiong, Shen Li, Wenjie Feng, <span class="author-tag">Ailin Deng</span>, Jihai Zhang, Bryan Hooi</span>
           <span class="info"> TMLR 2022</span>
           <span>
-            <a class="toggle-trigger" href="#">TL;DR</a> /
+            <a class="toggle-trigger" href="#">abstract</a> /
             <a href="https://openreview.net/forum?id=p5V8P2J61u">paper</a> / 
             <a href="https://github.com/MiaoXiong2320/NeighborAgg">code</a>
           </span>
           <span class="toggle-content">
-            Let's combine the original prediction and the neighborhood samples' predictions to make a decision!
+            How do we know when the predictions made by a classifier can be trusted? This is a fundamental problem that also has immense practical applicability, especially in safety-critical areas such as medicine and autonomous driving. The de facto approach of using the classifier's softmax outputs as a proxy for trustworthiness suffers from the over-confidence issue; while the most recent works incur problems such as additional retraining cost and accuracy versus trustworthiness trade-off. In this work, we argue that the trustworthiness of a classifier's prediction for a sample is highly associated with two factors: the sample's neighborhood information and the classifier's output. To combine the best of both worlds, we design a model-agnostic post-hoc approach NeighborAGG to leverage the two essential information via an adaptive neighborhood aggregation. Theoretically, we show that NeighborAGG is a generalized version of a one-hop graph convolutional network, inheriting the powerful modeling ability to capture the varying similarity between samples within each class. We also extend our approach to the closely related task of mislabel detection and provide a theoretical coverage guarantee to bound the false negative. Empirically, extensive experiments on image and tabular benchmarks verify our theory and suggest that NeighborAGG outperforms other methods, achieving state-of-the-art trustworthiness performance.
           </span>
 
         </div>
@@ -106,12 +120,25 @@
           <span class="authors"><span class="author-tag">Ailin Deng</span>, Adam Goodge, Lang Yi Ang, Bryan Hooi</span>
           <span class="info"> IJCAI 2022</span>
           <span>
-            <a class="toggle-trigger" href="#">TL;DR</a> /
+            <a class="toggle-trigger" href="#">abstract</a> /
             <a href="https://www.ijcai.org/proceedings/2022/0278.pdf">paper</a> /
             <a href="https://github.com/d-ailin/CADET">code</a>
           </span>
           <span class="toggle-content">
-            Existing methods tend to assign higher anomaly scores to the 'harder' samples.
+            The detection of anomalous samples in large,
+            high-dimensional datasets is a challenging task
+            with numerous practical applications. Recently,
+            state-of-the-art performance is achieved with
+            deep learning methods: for example, using the
+            reconstruction error from an autoencoder as
+            anomaly scores. However, the scores are uncalibrated: that is, they follow an unknown distribution and lack a clear interpretation. Furthermore, the reconstruction error is highly influenced by the ‘hardness’ of a given sample, which
+            leads to false negative and false positive errors.
+            In this paper, we empirically show the significance of this hardness bias present in a range
+            of recent deep anomaly detection methods. To
+            mitigate this, we propose an efficient and plugand-play error calibration method which mitigates this hardness bias in the anomaly scoring
+            without the need to retrain the model. We verify
+            the effectiveness of our method on a range of image, time-series, and tabular datasets and against
+            several baseline methods.
           </span>
         </div>
 
@@ -120,12 +147,12 @@
           <span class="authors"> <span class="author-tag">Ailin Deng</span>, Bryan Hooi</span>
           <span class="info"> AAAI 2021</span>
           <span>
-            <a class="toggle-trigger" href="#">TL;DR</a> /
+            <a class="toggle-trigger" href="#">abstract</a> /
             <a href="https://arxiv.org/abs/2106.06947">paper</a> / 
             <a href="https://github.com/d-ailin/GDN">code</a>
           </span>
           <span class="toggle-content">
-            A model to detect time series anomalies with some abilities of localizing and understanding why an anomaly happens.
+            Given high-dimensional time series data (e.g., sensor data), how can we detect anomalous events, such as system faults and attacks? More challengingly, how can we do this in a way that captures complex inter-sensor relationships, and detects and explains anomalies which deviate from these relationships? Recently, deep learning approaches have enabled improvements in anomaly detection in high-dimensional datasets; however, existing methods do not explicitly learn the structure of existing relationships between variables, or use them to predict the expected behavior of time series. Our approach combines a structure learning approach with graph neural networks, additionally using attention weights to provide explainability for the detected anomalies. Experiments on two real-world sensor datasets with ground truth anomalies show that our method detects anomalies more accurately than baseline approaches, accurately captures correlations between sensors, and allows users to deduce the root cause of a detected anomaly.
           </span>
         </div>
 
@@ -136,7 +163,7 @@
 
       </section>
       <footer>
-        <p><small>Credits to <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
@@ -157,7 +184,7 @@
   crossorigin="anonymous"></script>
   <script>
     $('document').ready(function(){
-      $('.toggle-trigger').append(' <i class="fa fa-caret-down" aria-hidden="true"></i>')
+      $('.toggle-trigger').append(' <i class="fa fa-caret-right" aria-hidden="true"></i>')
     })
 
     $('.toggle-trigger').click(function(e) {
@@ -167,11 +194,11 @@
 
       if(extraOptions.is(":visible")) {
           extraOptions.hide()
-          $(this).find('i').toggleClass('fa-caret-down').toggleClass('fa-caret-up')
+          $(this).find('i').toggleClass('fa-caret-right').toggleClass('fa-caret-down')
 
       } else {
           extraOptions.css('display', 'block')
-          $(this).find('i').toggleClass('fa-caret-down').toggleClass('fa-caret-up')
+          $(this).find('i').toggleClass('fa-caret-right').toggleClass('fa-caret-down')
 
       };
     })

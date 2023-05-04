@@ -383,6 +383,7 @@ a:hover {
   border: 1px dashed black;
   border-radius: 0.2em;
   padding: 1em 2em;
+  word-break: keep-all;
 }
 
 
