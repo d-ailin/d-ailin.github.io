@@ -386,4 +386,11 @@ a:hover {
   word-break: keep-all;
 }
 
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 1em;
+}
 
