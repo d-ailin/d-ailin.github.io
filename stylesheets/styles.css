@@ -106,7 +106,7 @@ img {
 header {
   width:270px;
   float:left;
-  position:fixed;
+  /* position:fixed; */
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -279,6 +279,12 @@ h1, h2, h3 {
 .title {
   color: #393939;
   text-align: center
+}
+
+.title:hover a{
+  text-decoration: none;
+  color: #f09228;
+  cursor: pointer;
 }
 
 a.bold {
