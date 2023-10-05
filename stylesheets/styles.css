@@ -39,9 +39,9 @@ a {
   text-decoration:none;
 }
 
-a:hover {
+/* a:hover {
   color:#069;
-}
+} */
 
 a small {
   font-size:11px;
@@ -281,6 +281,12 @@ h1, h2, h3 {
   text-align: center
 }
 
+a:hover{
+  color: #f09228;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .title:hover a{
   text-decoration: none;
   color: #f09228;
@@ -335,7 +341,7 @@ a.bold {
 }
 
 .pub {
-  margin-bottom: 3.5em;
+  margin-bottom: 1em;
 }
 
 .pub span {
@@ -362,6 +368,10 @@ a.bold {
   font-style: italic;
 } */
 
+.pub span.info i {
+  font-size: large;
+}
+
 .section-title {
   margin-top: 2.5em;
 }
@@ -371,15 +381,14 @@ a:hover {
   text-decoration: underline;
 }
 
-.pub .title a {
-  color: #222;
-}
+
 
 .pub .author-tag {
-  /* text-decoration: underline; */
+  text-decoration: underline;
   /* display: inline-block; */
   display: inline;
-  border-bottom: 1px dotted black;
+  /* border-bottom: 1px dotted black; */
+  font-weight: bold;
 }
 
 .pub .toggle-content {
@@ -400,3 +409,18 @@ a:hover {
   margin-bottom: 1em;
 }
 
+.info a.codelink:hover {
+  text-decoration: none;
+}
+
+.info .codelink:after{
+  /* content: '<i class="fa fa-github"></i>'; */
+
+  content: '\f09b';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  margin-left:2px;
+  font-size: large;
+}

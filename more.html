@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="google-site-verification" content="HERtZo9Bh-TSa7tDiURr5_MoTUZcMLPALIF0B-D-x24" />
+    <title>Ailin Deng @ NUS</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width">
+    <base target="_blank">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+     
+      <section style="width: auto; float:none; margin: auto">
+
+        <div><a href="./index.html" target="_self">&lt; Back</a></div>
+
+
+        <h2 class="section-title"> Service</h2>
+        <b>Reviewer</b>
+        <br>
+        (Journal) TKDE, Artificial Intelligence Review, TETCI, TNNLS, ACM Computing Surveys
+        <br>
+        (Conference) ICML'22, Neurips'23
+        <h2 class="section-title"> Selected Awards</h2>
+        NUS SOC Dean's Graduate Research Excellence Award (Sem 2 2022/2023)<br>
+        ICML Volunteer Grant 2023<br>
+        NUS SOC Research Achievement Award x 2 (Sem 2 2020/2021, Sem 2 2021/2022)
+
+
+        <h2 class="section-title"> Teaching</h2>
+        Teacher Assistant, Big-Data Analytics Technology (CS5344), NUS, 2021 and 2022.
+
+
+      </section>
+
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC04EMLTM5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SC04EMLTM5');
+  </script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+  integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+  crossorigin="anonymous"></script>
+  <script>
+    $('document').ready(function(){
+      $('.toggle-trigger').append(' <i class="fa fa-caret-right" aria-hidden="true"></i>')
+    })
+
+    $('.toggle-trigger').click(function(e) {
+      e.preventDefault();
+      // Get the extra options directly after the clicked link
+      var extraOptions = $(this).closest('div.pub').find('.toggle-content');
+
+      if(extraOptions.is(":visible")) {
+          extraOptions.hide()
+          $(this).find('i').toggleClass('fa-caret-right').toggleClass('fa-caret-down')
+
+      } else {
+          extraOptions.css('display', 'block')
+          $(this).find('i').toggleClass('fa-caret-right').toggleClass('fa-caret-down')
+
+      };
+    })
+  </script>
+  </body>
+</html>
