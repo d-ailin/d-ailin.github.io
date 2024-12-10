@@ -78,33 +78,36 @@
         background-position: center;
     }
 
-
+    .paper-img-bg {
+        display: none;
+    }
+    
   </style>
  </head>
- <body class="text-gray-800 text-sm md:text-sm">
+ <body class="bg-gray-100 text-gray-800 text-sm md:text-base">
   <div class="container mx-auto py-8 w-1/2">
    <div class="flex flex-wrap">
     <div class="w-full">
      <div class="flex flex-wrap">
       <div class="w-full lg:w-3/4">
-       <h1 class="text-3xl font-bold mb-6">
+       <h1 class="text-3xl font-bold mb-8">
         Ailin Deng
        </h1>
-       <p class="text-gray-700 mb-4">
+       <p class="text-gray-700 mb-6">
         I'm a Ph.D. student at School of Computing, National University of Singapore (NUS) under the supervision of Prof. 
         <a class="text-blue-500 hover:text-underline bh" href="#">Bryan Hooi</a>.
         Previously, I received the M.Sc. degree from NUS and the B.Eng. degree from Sun Yat-sen University.
         </p>
-       <p class="text-gray-700 mb-4">
+       <p class="text-gray-700 mb-6">
             <!-- My research interests focus on large generative models, including Large Language Models (LLMs) and Large Multimodal Models (LMMs).
             Specifically, I am interested in hallucinations, controllable generation and other techniques to enable high-quality and reliable generation. 
             Before that, I also worked on topics related to trustworthy AI, including uncertainty estimation and anomaly detection across different data modalities, including vision, language and time series. -->
             My research interests include but are not limited to: Safety AI, Large Vision-Language (Multimodal) Models and LLMs.
         </p>
-       <p class="text-gray-700 mb-4"> 
+       <p class="text-gray-700 mb-6"> 
             Email: ailin [at] u.nus.edu
        </p>
-       <div class="flex flex-wrap text-blue-500 mb-6">
+       <div class="flex flex-wrap text-blue-500 mb-10">
         <a class="mr-4 anchor-link" href="https://scholar.google.com/citations?user=VmhnpkUAAAAJ">
             Scholar
         </a>
@@ -122,85 +125,32 @@
       </div>
      </div>
 
-     <h2 class="text-2xl font-bold mb-4 mt-4">
+     <h2 class="text-2xl font-bold mb-8 mt-4">
        News
     </h2>
     <div class="flex flex-wrap mb-8 paper-item">
-        <!-- <p style="color:#FF8100;">I am on the job market, feel free to reach out!</p> -->
-        <div>[Dec 2024] I start my research internship at Meta GenAI.</div>
-        <div>[Sep 2024] Our paper on Identity Preserving Synthetic Face Recognition is accepted by NeurIPS 2024.</div>
+        <div>[Dec 2024] I start my research intern at Meta AI.</div>
+        <div>[Sep 2024] Our paper on Identity Preservting Face Generation is accepted by Neruips 2024.</div>
     </div>
 
-     <h2 class="text-2xl font-bold mb-4 mt-4">
-      Research
+     <h2 class="text-2xl font-bold mb-8 mt-4">
+      Publications & Preprints
      </h2>
 
      <!-- Research Items -->
      <div class="flex flex-wrap mb-8 paper-item">
-        <div class="w-full">
-         <h3 class="text-l font-bold mb-1 paper-title">
-          <a class="hover:text-blue-500" href="https://arxiv.org/abs/2409.17576">
-            ID^3: Identity-Preserving-yet-Diversified Diffusion Models for Synthetic Face Recognition
-          </a>
-         </h3>
-         <p class="text-gray-700 mb-1">
-          <a class="paper-author shen" href="#">
-           Shen Li
-          </a>
-          ,
-          <a class="paper-author jianqingxu" href="#">
-            Jianqing Xu
-        </a>
-        ,
-        <a class="paper-author jiaying" href="#">
-            Jiaying Wu
-        </a>
-          ,
-          <a class="paper-author miao" href="#">
-                Miao Xiong
-        </a>
-          ,
-          <a class="self-author">
-            Ailin Deng
-        </a>
-          ,
-          <a class="paper-author jiazhenji" href="#">
-            Jiazhen Ji
-        </a>
-        ,
-        <a class="paper-author yugehuang" href="#">
-            Yuge Huang
-        </a>
-          ,
-          <a class="paper-author wenjie" href="#">
-            Wenjie Feng
-        </a>
-          ,
-          <a class="paper-author shouhongding" href="#">
-            Shouhong Ding
-        </a>
-          ,
-          <a class="paper-author bh" href="#">
-              Bryan Hooi
-          </a>
-         </p>
-         <p class="gray-blue-500 mb-1">
-          NeurIPS 2024
-         </p>
-         <p>
-          <a class="anchor-link text-blue-500" href="https://arxiv.org/abs/2409.17576">arxiv</a>
-         </p>
+      <div class="w-full md:w-1/4 px-2 md:mb-0">
+        <div class="w-full paper-img-bg" style="background-image: url(./assets/thumbnails/clip_guided_decoding.png);">
         </div>
-       </div>
-
-     <div class="flex flex-wrap mb-8 paper-item">
-      <div class="w-full">
-       <h3 class="text-l font-bold mb-1 paper-title">
+       <!-- <img alt="Placeholder image representing research visualization" class="w-full" src="./assets/thumbnails/clip_guided_decoding.png"/> -->
+      </div>
+      <div class="w-full md:w-3/4 px-3">
+       <h3 class="text-l font-bold mb-2 paper-title">
         <a class="hover:text-blue-500" href="http://arxiv.org/abs/2402.15300">
          Seeing is Believing: Mitigating Hallucination in Large Vision-language Models via CLIP-Guided Decoding
         </a>
        </h3>
-       <p class="text-gray-700 mb-1">
+       <p class="text-gray-700 mb-2">
         <a class="self-author">
          Ailin Deng
         </a>
@@ -213,7 +163,7 @@
             Bryan Hooi
         </a>
        </p>
-       <p class="gray-blue-500 mb-1">
+       <p class="gray-blue-500 mb-2">
         Reliable and Responsible Foundation Models Workshop, ICLR 2024
        </p>
        <p>
@@ -225,13 +175,18 @@
      </div>
 
      <div class="flex flex-wrap mb-8 paper-item">
-       <div class="w-full">
-        <h3 class="text-l font-bold mb-1 paper-title">
+      <div class="w-full md:w-1/4 px-2 md:mb-0">
+        <div class="w-full paper-img-bg" style="background-image: url(./assets/thumbnails/proximitybias.png);">
+        </div>
+        <!-- <img alt="Placeholder image representing research visualization" class="w-full" src="./assets/thumbnails/proximitybias.png"/> -->
+       </div>
+       <div class="w-full md:w-3/4 px-3">
+        <h3 class="text-l font-bold mb-2 paper-title">
          <a class="hover:text-blue-500" href="https://arxiv.org/pdf/2306.04590.pdf">
             Proximity-Informed Calibration for Deep Neural Networks
          </a>
         </h3>
-        <p class="text-gray-700 mb-1">
+        <p class="text-gray-700 mb-2">
         <a class="paper-author miao" href="#">
             Miao Xiong
         </a>
@@ -260,8 +215,8 @@
           Bryan Hooi
          </a>
         </p>
-        <p class="gray-blue-500 mb-1">
-            NeurIPS, 2023 <font color="#FF8100">(Spotlight)</font>
+        <p class="gray-blue-500 mb-2">
+            NeurIPS, 2023 (Spotlight)
         </p>
         <p>
             <a class="anchor-link text-blue-500" href="https://arxiv.org/abs/2306.04590">arxiv</a>
@@ -272,13 +227,18 @@
     </div>
 
     <div class="flex flex-wrap mb-8 paper-item">
-       <div class="w-full">
-        <h3 class="text-l font-bold mb-1 paper-title">
+       <div class="w-full md:w-1/4 px-2 md:mb-0">
+        <div class="w-full paper-img-bg" style="background-image: url(./assets/thumbnails/prompt-and-align.png);">
+        </div>
+        <!-- <img alt="Placeholder image representing research visualization" class="w-full" src="./assets/thumbnails/prompt-and-align.png"/> -->
+       </div>
+       <div class="w-full md:w-3/4 px-3">
+        <h3 class="text-l font-bold mb-2 paper-title">
          <a class="hover:text-blue-500" href="https://browse.arxiv.org/pdf/2309.16424.pdf">
             Prompt-and-Align: Prompt-Based Social Alignment for Few-Shot Fake News Detection
          </a>
         </h3>
-        <p class="text-gray-700 mb-1">
+        <p class="text-gray-700 mb-2">
         <a class="paper-author jiaying" href="#">
             Jiaying Wu
         </a>
@@ -299,7 +259,7 @@
           Bryan Hooi
          </a>
         </p>
-        <p class="gray-blue-500 mb-1">
+        <p class="gray-blue-500 mb-2">
          CIKM, 2023
         </p>
         <p>
@@ -311,13 +271,18 @@
      </div>
 
      <div class="flex flex-wrap mb-8 paper-item">
-        <div class="w-full">
-         <h3 class="text-l font-bold mb-1 paper-title">
+        <div class="w-full md:w-1/4 px-2 md:mb-0">
+            <div class="w-full paper-img-bg" style="background-image: url(./assets/thumbnails/agreement.png);">
+            </div>
+            <!-- <img alt="Placeholder image representing research visualization" class="w-full" src="./assets/thumbnails/agreement.png"/> -->
+        </div>
+        <div class="w-full md:w-3/4 px-3">
+         <h3 class="text-l font-bold mb-2 paper-title">
           <a class="hover:text-blue-500" href="https://arxiv.org/pdf/2305.01481.pdf">
             Great Models Think Alike: Improving Model Reliability via Inter-Model Latent Agreement
           </a>
          </h3>
-         <p class="text-gray-700 mb-1">
+         <p class="text-gray-700 mb-2">
          <a class="self-author">
              Ailin Deng
          </a>
@@ -330,7 +295,7 @@
            Bryan Hooi
           </a>
          </p>
-         <p class="gray-blue-500 mb-1">
+         <p class="gray-blue-500 mb-2">
           ICML, 2023
          </p>
          <p>
@@ -343,13 +308,18 @@
 
 
      <div class="flex flex-wrap mb-8 paper-item">
-         <div class="w-full">
-          <h3 class="text-l font-bold mb-1 paper-title">
+        <div class="w-full md:w-1/4 px-2 md:mb-0">
+          <div class="w-full paper-img-bg" style="background-image: url(./assets/thumbnails/face_ensemble.png);">
+          </div>
+          <!-- <img alt="Placeholder image representing research visualization" class="w-full" src="./assets/thumbnails/proximitybias.png"/> -->
+         </div>
+         <div class="w-full md:w-3/4 px-3">
+          <h3 class="text-l font-bold mb-2 paper-title">
            <a class="hover:text-blue-500" href="https://openaccess.thecvf.com/content/CVPR2023/papers/Xu_Probabilistic_Knowledge_Distillation_of_Face_Ensembles_CVPR_2023_paper.pdf">
             Probabilistic Knowledge Distillation for Face Ensembles
            </a>
           </h3>
-          <p class="text-gray-700 mb-1">
+          <p class="text-gray-700 mb-2">
             <a class="paper-author jianqingxu" href="#">
                 Jianqing Xu
             </a>
@@ -374,15 +344,15 @@
             Jiaxiang Wu
         </a>
          ,
-         <a class="paper-author shouhongding" href="#">
-            Shouhong Ding
+         <a class="paper-author shuohongding" href="#">
+            Shuohong Ding
         </a>
          ,
            <a class="paper-author bh" href="#">
             Bryan Hooi
            </a>
           </p>
-          <p class="gray-blue-500 mb-1">
+          <p class="gray-blue-500 mb-2">
            CVPR, 2023
           </p>
           <p>
@@ -392,13 +362,18 @@
       </div>
 
       <div class="flex flex-wrap mb-8 paper-item">
-         <div class="w-full">
-          <h3 class="text-l font-bold mb-1 paper-title">
+        <div class="w-full md:w-1/4 px-2 md:mb-0">
+          <div class="w-full paper-img-bg" style="background-image: url(./assets/thumbnails/probing.png);">
+          </div>
+          <!-- <img alt="Placeholder image representing research visualization" class="w-full" src="./assets/thumbnails/proximitybias.png"/> -->
+         </div>
+         <div class="w-full md:w-3/4 px-3">
+          <h3 class="text-l font-bold mb-2 paper-title">
            <a class="hover:text-blue-500" href="https://arxiv.org/pdf/2302.02628.pdf">
             Trust, but Verify: Using Self-Supervised Probing to Improve Trustworthiness
            </a>
           </h3>
-          <p class="text-gray-700 mb-1">
+          <p class="text-gray-700 mb-2">
             <a class="self-author">
                 Ailin Deng
                </a>
@@ -419,7 +394,7 @@
             Bryan Hooi
            </a>
           </p>
-          <p class="gray-blue-500 mb-1">
+          <p class="gray-blue-500 mb-2">
            ECCV, 2022
           </p>
           <p>
@@ -431,13 +406,18 @@
       </div>
 
       <div class="flex flex-wrap mb-8 paper-item">
-         <div class="w-full">
-          <h3 class="text-l font-bold mb-1 paper-title">
+        <div class="w-full md:w-1/4 px-2 md:mb-0">
+          <div class="w-full paper-img-bg" style="background-image: url(./assets/thumbnails/neighboragg.png);">
+          </div>
+          <!-- <img alt="Placeholder image representing research visualization" class="w-full" src="./assets/thumbnails/proximitybias.png"/> -->
+         </div>
+         <div class="w-full md:w-3/4 px-3">
+          <h3 class="text-l font-bold mb-2 paper-title">
            <a class="hover:text-blue-500" href="https://openreview.net/forum?id=p5V8P2J61u">
             Birds of a Feather Trust Together: Knowing When to Trust a Classifier via Adaptive Neighborhood Aggregation
            </a>
           </h3>
-          <p class="text-gray-700 mb-1">
+          <p class="text-gray-700 mb-2">
             
             <a class="paper-author miao" href="#">
                 Miao Xiong
@@ -463,7 +443,7 @@
             Bryan Hooi
            </a>
           </p>
-          <p class="gray-blue-500 mb-1">
+          <p class="gray-blue-500 mb-2">
            TMLR, 2022
           </p>
           <p>
@@ -475,12 +455,17 @@
       </div>
 
       <div class="flex flex-wrap mb-8 paper-item">
-         <div class="w-full">
-          <h3 class="text-l font-bold mb-1 paper-title">
+        <div class="w-full md:w-1/4 px-2 md:mb-0">
+          <div class="w-full paper-img-bg" style="background-image: url(./assets/thumbnails/cadet.png);">
+          </div>
+          <!-- <img alt="Placeholder image representing research visualization" class="w-full" src="./assets/thumbnails/proximitybias.png"/> -->
+         </div>
+         <div class="w-full md:w-3/4 px-3">
+          <h3 class="text-l font-bold mb-2 paper-title">
            <a class="hover:text-blue-500" href="https://www.ijcai.org/proceedings/2022/0278.pdf">
             CADET: Calibrated Anomaly Detection for Mitigating Hardness Bias
           </h3>
-          <p class="text-gray-700 mb-1">
+          <p class="text-gray-700 mb-2">
             <a class="self-author">
                 Ailin Deng
             </a>
@@ -497,7 +482,7 @@
             Bryan Hooi
            </a>
           </p>
-          <p class="gray-blue-500 mb-1">
+          <p class="gray-blue-500 mb-2">
            IJCAI, 2022
           </p>
           <p>
@@ -509,12 +494,17 @@
       </div>
 
       <div class="flex flex-wrap mb-8 paper-item">
-         <div class="w-full">
-          <h3 class="text-l font-bold mb-1 paper-title">
+        <div class="w-full md:w-1/4 px-2 md:mb-0">
+          <div class="w-full paper-img-bg" style="background-image: url(./assets/thumbnails/gdn.png);">
+          </div>
+          <!-- <img alt="Placeholder image representing research visualization" class="w-full" src="./assets/thumbnails/proximitybias.png"/> -->
+         </div>
+         <div class="w-full md:w-3/4 px-3">
+          <h3 class="text-l font-bold mb-2 paper-title">
            <a class="hover:text-blue-500" href="https://arxiv.org/abs/2106.06947">
             Graph Neural Network-Based Anomaly Detection in Multivariate Time Series
           </h3>
-          <p class="text-gray-700 mb-1">
+          <p class="text-gray-700 mb-2">
             <a class="self-author">
                 Ailin Deng
             </a>
@@ -523,7 +513,7 @@
             Bryan Hooi
            </a>
           </p>
-          <p class="gray-blue-500 mb-1">
+          <p class="gray-blue-500 mb-2">
            AAAI, 2021
           </p>
           <p>
@@ -560,14 +550,11 @@
         'shen': 'https://github.com/MathsShen',
         'jianqingxu': 'https://ieeexplore.ieee.org/author/37089015454',
         'jiaxiangwu': 'https://openreview.net/profile?id=~Jiaxiang_Wu1',
-        'shouhongding': 'https://scholar.google.com/citations?user=OGf40fkAAAAJ',
+        'shuohongding': 'https://scholar.google.com/citations?user=OGf40fkAAAAJ',
         'wenjie': 'https://wenchieh.github.io/',
         'jihai': 'https://www.linkedin.com/in/jihai-zhang-129885284/',
         'agoodge': 'https://agoodge.github.io/',
         'langyiang': 'https://www.linkedin.com/in/joel-ang-lang-yi/',
-        'jiazhenji': 'https://openreview.net/profile?id=~Jiazhen_Ji1',
-        'yugehuang': 'https://openreview.net/profile?id=~Yuge_Huang1',
-
     }
 
     // Function to set links based on class names
